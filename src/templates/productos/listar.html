@@ -1,9 +1,9 @@
 <h1>Hola {{nombre_usuario}}</h1>
 
 <ul>
-	{% for p in lista_productos %}
-	<li> {{p.nombre}}</li>
+	{% for p in Lista_productos %}
+		<li>{{p.nombre}}</li>
 	{% empty %}
-	<li>No existen productos</li>
-	{% endfor %}        
+		<li>No existen productos</li>
+	{% endfor %}
 </ul>
