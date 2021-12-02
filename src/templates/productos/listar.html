@@ -1,9 +1,28 @@
-<h1>Hola {{nombre_usuario}}</h1>
+{% load static %}
 
-<ul>
-	{% for p in lista_productos %}
-		<li>{{p.nombre}}</li>
-	{% empty %}
-		<li>No existen productos</li>
-	{% endfor %}
-</ul>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--Css	-->
+		<!--<style type="text/css" href="{% static 'css/styles.css' %}"></#style>-->
+		<link rel="stylesheet" href="{% static 'css/styles.css'%}">
+		<title>Lista de Productos</title>
+	</head>
+	<body>
+		<h1>Hola {{nombre_usuario}}</h1>
+		
+		<ul>
+			{% for p in lista_productos %}
+				<li>{{p.nombre}} ({{p.id}})</li>
+			{% empty %}
+				<li	li>No existen productos</li>
+			{% endfor %}
+		</ul>
+
+		<!-- JS -->
+
+	</body>
+</html>
