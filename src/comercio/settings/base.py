@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 
 # redireccion cuando alguien es autenticado correctamente
 LOGIN_REDIRECT_URL = reverse_lazy("inicio")
+LOGIN_URL = reverse_lazy("login")
 # Application definition
 
 INSTALLED_APPS = [
