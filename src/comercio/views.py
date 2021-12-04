@@ -14,8 +14,9 @@ def inicio(request):
         'ultimos_productos': ultimos_productos
     }
     return render(request,template_name,ctx)
-
+'''**** reemplazamos la vista basada en funcion por vista basada en clase 
 def login(request):
     template_name = "login.html"
     ctx = {}
     return render(request,template_name,ctx)
+'''
